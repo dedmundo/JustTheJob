@@ -1,0 +1,3 @@
+<name>Eric <address>328 N. Lillian St. Griffith Indiana 46319 <phone>(219)-718-4598 <email>elsander@butler.edu
+<name>Brandon <address>422 Westfield Street Indianapolis, Indiana 46208 <phone>(317)-555-4323 <email>brandon@butler.edu
+<name>Devin <address>666 Waterloo Dr. Indianapolis, Indiana 46254 <phone>(317)-455-8998 <email>devin@butler.edu

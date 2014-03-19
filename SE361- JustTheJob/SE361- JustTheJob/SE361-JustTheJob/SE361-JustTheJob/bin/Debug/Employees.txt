@@ -1,0 +1,3 @@
+<name>Devin <address>388 Waterloo Dr. Indianapolis, Indiana 46254 <home>(317)-654-0987 <mobile>(317)-123-6543 <email>devin@JJJ.com <nameEM>Eric <phone>(219)-934-0270 <position>Manager <payType>Salary<pay>$95,000
+<name>Brandon <address>890 Spooner St. Quahog, RI, 78902 <home>(879)-234-9280 <mobile>(879)-245-2783 <email>Brandon@JustTheJob.com <nameEM>Eric <phone>(219)-718-4598 <position>Cleaner <payType>Hourly<pay>$10.50
+<name>Eric <address>328 N. Lillian St. Griffith, Indiana 46319 <home>(219)-718-4598 <mobile>(219)-934-0270 <email>Eric@JustTheJob.com <nameEM>Devin <phone>(317)-345-6789 <position>Cleaner <payType>Hourly <pay>$10.25

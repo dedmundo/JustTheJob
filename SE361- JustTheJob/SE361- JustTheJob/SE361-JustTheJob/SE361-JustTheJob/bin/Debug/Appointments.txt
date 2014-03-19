@@ -1,0 +1,4 @@
+<name>Meet with Eric <location>Manager's Office <date>04/26/2013 <time>11:30 AM <length>1 Hour <brief>Eric wants a raise. Give him a raise!
+<name>Meeting with Brandon <location>Manager's Office <date>04/26/2013 <time>1:00 PM <length>1 Hour <brief>Brandon wants a raise. Don't give Brandon a raise!
+<name>Eat a sandwich <location>Sandwich Shop <date>05/22/2013 <time>12:00 PM <length>10 Hours <brief>Eat a sandwich
+<name>Meet with Client Ted <location>Manager's Office <date>04/29/2013 <time>1:00 PM <length>2 Hours <brief>Ted, our client wants to chat

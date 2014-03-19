@@ -1,0 +1,2 @@
+<id>0013 <name>Josh Graves <type>One <employee>Butler University <payment>40000 <paymentMethod>Debit <complete>06/01/2013 <amountPaid>0 <week>04/30/2013
+<id>0001 <name>Ted <type>One <employee>Eric <payment>1500 <paymentMethod>Credit <complete>12/04/2013 <amountPaid>0 <week>12/03/2013

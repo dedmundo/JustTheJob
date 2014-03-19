@@ -1,0 +1,4 @@
+<invoiceID>0002 <amountPaid>2500
+<invoiceID>0013 <amountPaid>5000
+<invoiceID>0013 <amountPaid>7500
+<invoiceID>0013 <amountPaid>2250

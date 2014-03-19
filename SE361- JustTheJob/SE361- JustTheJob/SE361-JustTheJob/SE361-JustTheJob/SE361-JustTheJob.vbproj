@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{367652BE-3D8B-43CA-AFCC-A8984BA6D415}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>WindowsApplication1.My.MyApplication</StartupObject>
+    <RootNamespace>WindowsApplication1</RootNamespace>
+    <AssemblyName>SE361-JustTheJob</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SE361-JustTheJob.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SE361-JustTheJob.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppointmentViewForm.Designer.vb">
+      <DependentUpon>AppointmentViewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AppointmentViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CancelPaymentForm.Designer.vb">
+      <DependentUpon>CancelPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CancelPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clsAppointment.vb" />
+    <Compile Include="clsAppointmentListManager.vb" />
+    <Compile Include="clsCheck.vb" />
+    <Compile Include="clsInvoice.vb" />
+    <Compile Include="clsCustomer.vb" />
+    <Compile Include="clsCustomerListManager.vb" />
+    <Compile Include="clsEmployee.vb" />
+    <Compile Include="clsEmployeeListManager.vb" />
+    <Compile Include="clsFileManager.vb" />
+    <Compile Include="clsInvoiceListManager.vb" />
+    <Compile Include="clsJob.vb" />
+    <Compile Include="clsJobListManager.vb" />
+    <Compile Include="clsPayment.vb" />
+    <Compile Include="clsPaymentListManager.vb" />
+    <Compile Include="CreditAccountForm.Designer.vb">
+      <DependentUpon>CreditAccountForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreditAccountForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerEditForm.Designer.vb">
+      <DependentUpon>CustomerEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerForm.Designer.vb">
+      <DependentUpon>CustomerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerInfoForm.Designer.vb">
+      <DependentUpon>CustomerInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeEditForm.Designer.vb">
+      <DependentUpon>EmployeeEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeInfo.Designer.vb">
+      <DependentUpon>EmployeeInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeesForm.Designer.vb">
+      <DependentUpon>EmployeesForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeesForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomerListForm.Designer.vb">
+      <DependentUpon>CustomerListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomerListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeListForm.Designer.vb">
+      <DependentUpon>EmployeeListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceEditForm.Designer.vb">
+      <DependentUpon>InvoiceEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceListForm.Designer.vb">
+      <DependentUpon>InvoiceListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobViewForm.Designer.vb">
+      <DependentUpon>JobViewForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobViewForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewInvoiceForm.Designer.vb">
+      <DependentUpon>NewInvoiceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewInvoiceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecordPaymentForm.Designer.vb">
+      <DependentUpon>RecordPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RecordPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleChangeForm.Designer.vb">
+      <DependentUpon>ScheduleChangeForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleChangeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobEditForm.Designer.vb">
+      <DependentUpon>JobEditForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobEditForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobListForm.Designer.vb">
+      <DependentUpon>JobListForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobListForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewAppointment.Designer.vb">
+      <DependentUpon>NewAppointment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewAppointment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewEmployee.Designer.vb">
+      <DependentUpon>NewEmployee.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewEmployee.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewCustomerForm.Designer.vb">
+      <DependentUpon>NewCustomerForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewCustomerForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewJobForm.Designer.vb">
+      <DependentUpon>NewJobForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewJobForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PaymentForm.Designer.vb">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvoiceForm.Designer.vb">
+      <DependentUpon>InvoiceForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ScheduleForm.Designer.vb">
+      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ScheduleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JobForm.Designer.vb">
+      <DependentUpon>JobForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JobForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainform.Designer.vb">
+      <DependentUpon>Mainform.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="InvoiceInfoForm.Designer.vb">
+      <DependentUpon>InvoiceInfoForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvoiceInfoForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewScheduleForm.Designer.vb">
+      <DependentUpon>ViewScheduleForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewScheduleForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AppointmentViewForm.resx">
+      <DependentUpon>AppointmentViewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CancelPaymentForm.resx">
+      <DependentUpon>CancelPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreditAccountForm.resx">
+      <DependentUpon>CreditAccountForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerEditForm.resx">
+      <DependentUpon>CustomerEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerForm.resx">
+      <DependentUpon>CustomerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerInfoForm.resx">
+      <DependentUpon>CustomerInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomerListForm.resx">
+      <DependentUpon>CustomerListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeEditForm.resx">
+      <DependentUpon>EmployeeEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeInfo.resx">
+      <DependentUpon>EmployeeInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeListForm.resx">
+      <DependentUpon>EmployeeListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EmployeesForm.resx">
+      <DependentUpon>EmployeesForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceEditForm.resx">
+      <DependentUpon>InvoiceEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceListForm.resx">
+      <DependentUpon>InvoiceListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobEditForm.resx">
+      <DependentUpon>JobEditForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobListForm.resx">
+      <DependentUpon>JobListForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobViewForm.resx">
+      <DependentUpon>JobViewForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewAppointment.resx">
+      <DependentUpon>NewAppointment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewEmployee.resx">
+      <DependentUpon>NewEmployee.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewCustomerForm.resx">
+      <DependentUpon>NewCustomerForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceForm.resx">
+      <DependentUpon>InvoiceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JobForm.resx">
+      <DependentUpon>JobForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainform.resx">
+      <DependentUpon>Mainform.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewInvoiceForm.resx">
+      <DependentUpon>NewInvoiceForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewJobForm.resx">
+      <DependentUpon>NewJobForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaymentForm.resx">
+      <DependentUpon>PaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecordPaymentForm.resx">
+      <DependentUpon>RecordPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleChangeForm.resx">
+      <DependentUpon>ScheduleChangeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ScheduleForm.resx">
+      <DependentUpon>ScheduleForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvoiceInfoForm.resx">
+      <DependentUpon>InvoiceInfoForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewScheduleForm.resx">
+      <DependentUpon>ViewScheduleForm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagramIteration1.vsd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
